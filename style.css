@@ -250,7 +250,7 @@ body{
 
   @keyframes open {
     0% {
-      margin-left: -13%;
+      margin-left: -18%;
     }
     100% {
       margin-left: 0;
@@ -511,7 +511,7 @@ hr{
 
   .unit{
     font-size: 37px;
-    margin-left: 40%;
+    margin-left: 38.5%;
     font-family: roboto,sans-serif;;
   }
 
@@ -532,7 +532,7 @@ hr{
   }
 
   .menu{
-    width: 40%;
+    width: 47%;
     height: 100%;
   }
 
