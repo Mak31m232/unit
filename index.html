@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <button onclick="menu()" class="btn-burger"><img src="иконки/меню.png" alt="" class="burger"></button>
+        <img class="logo" src="иконки/лого.png" alt="">
+        <a class="unit" href="">unit</a>
+        <form class="form" action="">
+            <div class="group">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                    <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                    ></path>
+                </svg>
+                <input class="input" type="search" spellcheck="true" placeholder="Поиск" />
+            </div>
+        </form>
+        <div id="creation" class="creation">
+            <button class="notification-btn"><img class="notification-img" src="иконки/уведомления.png" alt=""></button>
+            <button class="add-btn"><img class="add-img" src="иконки/плюс.png" alt=""></button>
+        </div>
+        <button id="btn-sign" onclick="registration()" class="btn-sign">Войти</button>
+        <button id="acaunt" onclick="menu2()" class="acaunt"></button>
+        <button class="btn-setting"><img class="img-setting" src="иконки/настройки.png" alt=""></button>
+    </header>
+    <div id="menu2" class="menu2">
+        <div class="warp3">
+        <h3 class="title">Ваш аккаунт</h3><br>
+            <div class="links2">
+                <a href="" id="user-acaunt" class="a">Посмотреть канал</a><br>
+                <a href="" class="a">Мои истории</a><br>
+                <a class="theme3" href="">Тема:</a>
+                <button onclick="e()" id="theme" class="theme2">темная</button><br>
+                <a class="a" href="">Помощь</a><br>
+                <a href="" class="a">Настройки</a><br>
+                <a href="" class="a">Сообщить о ошибке</a><br>
+                <a class="a" href="">Выйти</a>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="menu">
+        <div class="links">
+            <div class="content">
+                <a id="a1" href="" class="a"><img id="glav-icon" class="icons" src="иконки/главная.png" alt="">Главная</a><br>
+                <a href="" class="a"><img class="icons" src="иконки/огонь.png" alt="">Рекомендации</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/книга.png" alt="">Библиотека</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/подписки.png" alt="">Подписки</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/видео.png" alt="">Видео</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/спорт.png" alt="">Спорт</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/музыка.png" alt="">Музыка</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/мессенджер.png" alt="">Мессенджер</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/фильмы.png" alt="">Кинотеатр</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/трансляции.png" alt="">Трансляции</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/звезда.png" alt="">Премиум</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/избранное.png" alt="">Избранное</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/Справка.png" alt="">Справка</a><br>
+            </div>
+                <hr class="hr3">
+                <div class="other">
+                    <a href="" class="a"><img class="icons" src="иконки/Отзовы.png" alt="">Отзывы</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/отпрвить отзыв.png" alt="">Отправить отзыв</a><br>
+                    <a href="" class="a"><img class="icons" src="иконки/Связь.png" alt="">Связаться с нами</a><br>
+                </div>
+            </div>
+            <hr class="hr2">
+        <div class="hr">
+            <a class="hr1" href="">Применяются<br> рекомендательные<br> технологии</a>
+        </div>
+    </div>
+    <div id="icon-div" class="icon-div">
+        <div class="content">
+            <a class="icon-links" href=""><img id="glav-icon2" title="Главная" src="иконки/главная.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Рекомендации" src="иконки/огонь.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Библиотека" src="иконки/книга.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Подписки" src="иконки/подписки.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Видео" src="иконки/видео.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Спорт" src="иконки/спорт.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Музыка" src="иконки/музыка.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Мессенджер" src="иконки/мессенджер.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Кинотеатр" src="иконки/фильмы.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Трансляции" src="иконки/трансляции.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Премиум" src="иконки/звезда.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Избранное" src="иконки/избранное.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Справка" src="иконки/Справка.png" alt="" class="icon2"></a><br>
+        </div>
+        <hr class="hr3">
+        <div class="other">
+            <a class="icon-links" href=""><img title="Отзывы" src="иконки/Отзовы.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Отправить отзыв" src="иконки/отпрвить отзыв.png" alt="" class="icon2"></a><br>
+            <a class="icon-links" href=""><img title="Связаться с нами" src="иконки/Связь.png" alt="" class="icon2"></a>
+        </div>
+    </div>
+    <div id="registration" class="registration">
+        <button onclick="registration4()" class="cross">
+            <img src="иконки/крест.png" alt="" class="cross-img">
+            </button>
+            <h3 class="welcome">Добро пожаловать!</h3>
+        <div class="reg">
+            <img class="logo2" src="иконки/лого.png" alt="">
+            <div class="reg-input2">
+                <label for="usernameField" class="usernamelabel labell">Username</label>
+                <input class="reg-input1" type="text" placeholder="@" id="usernameField" required="required">
+            </div>
+            <div class="reg-input">
+                <label for="usernameField" class="usernamelabell labell">Password</label>
+                <input class="reg-input2" type="password" id="usernameFiel" required="required">
+            </div>
+        
+        <button onclick="registration2()" class="login">Войти</button>
+        <button onclick="registration3()()" class="signup">Зарегистрироваться</button>
+    </div>
+</div>
+</body>
+</html>
