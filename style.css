@@ -271,8 +271,8 @@ body{
     background-color: rgb(54, 53, 53);
     width: 4%;
     height: 100%;
-    display: none;
     transition: .2s;
+    display: none;
   }
 
   .icon2{
@@ -431,7 +431,14 @@ hr{
   padding: 5px 5px;
 }
 
-#usernameFiel {
+.usernamelabel {
+  display: block;
+  color: white;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+
+#usernameField {
   display: block;
   width: 200px;
   height: 40px;
@@ -445,6 +452,35 @@ hr{
   font-size: 12px;
   transition-duration: .2s;
 }
+
+#usernameField:focus,
+#usernameField:valid {
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
+#usernameFiel {
+  margin-left: 0.9%;
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #292929;
+  border-radius: 6px;
+  border: 2px solid #292929;
+  padding: 0px 12px;
+  outline: none;
+  caret-color: rgb(152, 88, 255);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+
+#usernameFiel:focus,
+#usernameFiel:valid {
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
 
 .login{
   position: absolute;
@@ -488,6 +524,137 @@ hr{
   width: 80%;
 }
 
+.registration-mobil{
+  margin-left: -10%;
+  margin-top: -90%;
+  display: none;
+  animation-name: registration-mobil;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: registration;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+.welcome-mobil{
+  white-space: nowrap;
+  margin-left: 75%;
+  margin-top: -2%;
+  font-size: 20px;
+}
+
+.shadow::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: none;
+}
+
+.shadow::after {
+  content: ''; position: absolute; top: 0; background: rgba(28, 28, 28, 0.6);
+}
+
+@keyframes registration-mobil {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+#usernameField-mobil{
+  display: block;
+  width: 350px;
+  height: 35px;
+  margin-left: 30%;
+  background-color: #292929;
+  border-radius: 6px;
+  border: 2px solid #292929;
+  padding: 0px 12px;
+  outline: none;
+  caret-color: rgb(152, 88, 255);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+
+#usernameField-mobil:focus,
+#usernameField-mobil:valid {
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
+#usernameFiel-mobil{
+  display: block;
+  width: 350px;
+  height: 35px;
+  margin-left: 30%;
+  background-color: #292929;
+  border-radius: 6px;
+  border: 2px solid #292929;
+  padding: 0px 12px;
+  outline: none;
+  caret-color: rgb(152, 88, 255);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+
+#usernameFiel-mobil:focus,
+#usernameFiel-mobil:valid {
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
+.login-mobil{
+  position: absolute;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  margin-left: 32%;
+  margin-top: 3%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.5s ease;
+}
+
+.login-mobil:hover{
+  background-color: #8d37fe;
+}
+
+.signup-mobil{
+  position: absolute;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  margin-left: 55%;
+  margin-top: 3%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.5s ease;
+}
+
+.signup-mobil:hover{
+  background-color: #8d37fe;
+}
+
+.shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: #292929;
+  opacity: 0.8;
+  z-index: 2;
+}
+
 @media(max-width:752px){
   .logo{
     display: none;
@@ -527,11 +694,24 @@ hr{
     display: none;
   }
 
+  .shadow{
+    display: block;
+  }
+
+  .registration-mobil{
+    position: absolute;
+    place-items: center;
+    margin-top: 30%;
+    display: block;
+    z-index: 3;
+  }
+
   .registration{
     display: none;
   }
 
   .menu{
+    position: relative;
     width: 47%;
     height: 100%;
   }

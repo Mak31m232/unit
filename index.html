@@ -8,6 +8,7 @@
     <title>Главная</title>
 </head>
 <body>
+    <div id="shadow" class="shadow"></div>
     <header class="header">
         <button onclick="menu()" class="btn-burger"><img src="иконки/меню.png" alt="" class="burger"></button>
         <img class="logo" src="иконки/лого.png" alt="">
@@ -43,6 +44,19 @@
                 <a href="" class="a">Сообщить о ошибке</a><br>
                 <a class="a" href="">Выйти</a>
             </div>
+        </div>
+    </div>
+    <div id="registration-mobil" class="registration-mobil">
+        <h3 class="welcome-mobil">Добро пожаловать!</h3>
+        <div class="reg">
+            <div class="reg-input2">
+                <input type="text" placeholder="@" id="usernameField-mobil" required="required">
+            </div>
+            <div class="reg-input">
+                <input type="text" placeholder="" id="usernameFiel-mobil" required="required">
+            </div>
+            <button onclick="registration2()" class="login-mobil">Войти</button>
+            <button onclick="registration3()()" class="signup-mobil">Зарегистрироваться</button>
         </div>
     </div>
     <div id="menu" class="menu">
@@ -105,17 +119,17 @@
         <div class="reg">
             <img class="logo2" src="иконки/лого.png" alt="">
             <div class="reg-input2">
-                <label for="usernameField" class="usernamelabel labell">Username</label>
-                <input class="reg-input1" type="text" placeholder="@" id="usernameField" required="required">
+                <label for="usernameField" class="usernamelabel label">Username</label>
+                <input type="text" placeholder="@" id="usernameField" required="required">
             </div>
             <div class="reg-input">
-                <label for="usernameField" class="usernamelabell labell">Password</label>
-                <input class="reg-input2" type="password" id="usernameFiel" required="required">
+                <label for="usernameField" class="usernamelabel label">Password</label>
+                <input type="text" placeholder="" id="usernameFiel" required="required">
             </div>
         
-        <button onclick="registration2()" class="login">Войти</button>
-        <button onclick="registration3()()" class="signup">Зарегистрироваться</button>
+            <button onclick="registration2()" class="login">Войти</button>
+            <button onclick="registration3()()" class="signup">Зарегистрироваться</button>
+        </div>
     </div>
-</div>
 </body>
 </html>

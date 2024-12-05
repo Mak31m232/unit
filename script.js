@@ -34,10 +34,14 @@ function registration2() {
     var creation = document.getElementById("creation")
     var user = document.getElementById("usernameFiel").value
     var user2 = document.getElementById("usernameField").value
+    let shadow = document.getElementById("shadow")
+    let registrationmobil = document.getElementById("registration-mobil")
+    registrationmobil.style.display = "none"
+    shadow.style.display = "none"
     console.log("Password: "+user)
     console.log("Name: "+user2)
     acaunt.style.marginLeft = "96.5%"
-    creation.style.marginLeft = "-46%"
+    creation.style.marginLeft = "-48%"
     sign.style.display = "none"
     alert("Вы успешно вошли в акаунт")
 }
@@ -49,6 +53,10 @@ function registration3() {
     var creation = document.getElementById("creation")
     var user = document.getElementById("usernameFiel").value
     var user2 = document.getElementById("usernameField").value
+    let shadow = document.getElementById("shadow")
+    let registrationmobil = document.getElementById("registration-mobil")
+    registrationmobil.style.display = "none"
+    shadow.style.display = "none"
     console.log("Password: "+user)
     console.log("Name: "+user2)
     acaunt.style.marginLeft = "96.5%"
