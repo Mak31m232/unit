@@ -238,14 +238,15 @@ body{
     display: inline-grid;
     background-color: rgb(54, 53, 53);
     padding-top: 1%;
-    width: 15.3%;
-    height: 100%;
+    width: 17%;
+    height: 660px;
     border-radius: 0px 0px 7px 0px;
     animation-name: open;
     animation-duration: 450ms;
     animation-timing-function: menu;
+    scrollbar-color: #5c5c5c #3d3d3d;
+    overflow-y: scroll;
     overflow-x: hidden;
-    overflow-y: auto;
   }
 
   @keyframes open {
@@ -316,6 +317,16 @@ hr{
 
 .other{
   padding-top: 5%;
+}
+
+.other2{
+  padding-top: 5%;
+  white-space: nowrap;
+}
+
+.hr4{
+  width: 100%;
+  margin-top: 3%;
 }
 
 .hr{
@@ -712,8 +723,16 @@ hr{
 
   .menu{
     position: relative;
-    width: 47%;
+    width: 52%;
     height: 100%;
+  }
+
+  .other{
+    display: none;
+  }
+
+  .hr3{
+    display: none;
   }
 
   .links{

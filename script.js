@@ -5,7 +5,7 @@ function menu() {
         let menu = document.getElementById("menu") 
         let menuicon = document.getElementById("icon-div") 
         let registration = document.getElementById("registration")
-        registration.style.marginTop = "-33%"
+        registration.style.marginTop = "-39.5%"
         menuicon.style.display="block"
         menu.style.display="none"
         shetmenu = 1;
