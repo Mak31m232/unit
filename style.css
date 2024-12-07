@@ -795,6 +795,10 @@ hr{
     width: 0;
     height: 0;
   }
+
+  .possibilities{
+    white-space: nowrap;
+  }
 }
 
 @media(max-width:1920px) and (min-height:1080px){
