@@ -122,7 +122,7 @@ body{
   display: flex;
   align-items: center;
   margin-left: -55%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .add-btn{
@@ -143,7 +143,7 @@ body{
     padding: 10px 22px;
     border-radius: 6px;
     border: none;
-    margin-left: 89.7%;
+    margin-left: 89.5%;
     color: #fff;
     cursor: pointer;
     background-color: #7d2ae8;
@@ -182,6 +182,7 @@ body{
   animation-fill-mode: forwards;
   animation-delay: 0s;
   z-index: 2;
+  font-size: 17.5px;
   display: none;
 }
 
@@ -270,14 +271,14 @@ body{
 
   .icon-div {
     background-color: rgb(54, 53, 53);
-    width: 4%;
+    width: 3%;
     height: 100%;
     transition: .2s;
     display: none;
   }
 
   .icon2{
-    width: 45%;
+    width: 63%;
     margin-left: 19%;
     margin-top: 10.2%;
     display: inline-grid;
@@ -295,7 +296,7 @@ body{
   }
 
   #glav-icon2{
-    width: 35%;
+    width: 48%;
   }
 
   .icons {
@@ -324,6 +325,16 @@ hr{
   white-space: nowrap;
 }
 
+.possibilities{
+  margin-left: 7%;
+  margin-top: 1%;
+  font-family: roboto,sans-serif;
+}
+
+.possibilitiess{
+  margin-top: 2%;
+}
+
 .hr4{
   width: 100%;
   margin-top: 3%;
@@ -345,6 +356,7 @@ hr{
 }
 
 .registration {
+  position: relative;
   align-items: center;
   justify-content: center;
   margin-left: 43%;
@@ -356,6 +368,7 @@ hr{
   animation-timing-function: registration;
   animation-fill-mode: forwards;
   animation-delay: 0s;
+  z-index: 2;
 }
 
 @keyframes reg {
@@ -782,4 +795,56 @@ hr{
     width: 0;
     height: 0;
   }
+}
+
+@media(max-width:1920px) and (min-height:1080px){
+    body{
+      font-size: 22px;
+    }
+
+    .logo{
+      width:4.5%;
+      height: 90%;
+    }
+
+    .input{
+      width: 800px;
+    }
+
+    .btn-sign{
+      margin-left: 90.5%;
+    }
+
+    .creation{
+      padding-left: 3%;
+    }
+
+    .registration{
+      margin-top: -27%;
+    }
+
+    .cross{
+      display: none;
+    }
+
+    .menu{
+      width: 13%;
+      height: 680px;
+    }
+
+    .menu2{
+      width: 13%;
+      height: 30%;
+      font-size: 22px;
+    }
+
+    .shadow{
+      display: block;
+    }
+
+    .possibilities{
+      font-size: 21px;
+      white-space: nowrap;
+      margin-left: 3%;
+    }
 }
