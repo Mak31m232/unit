@@ -5,7 +5,9 @@ function menu() {
         let menu = document.getElementById("menu") 
         let menuicon = document.getElementById("icon-div") 
         let registration = document.getElementById("registration")
-        registration.style.marginTop = "-39.5%"
+        let content = document.getElementById("content-watch")
+        content.style.marginTop = "-50%"
+        registration.style.marginTop = "-53%"
         menuicon.style.display="block"
         menu.style.display="none"
         shetmenu = 1;
@@ -14,6 +16,8 @@ function menu() {
         let boom = document.getElementById("menu")
         let menuicon = document.getElementById("icon-div") 
         let registration = document.getElementById("registration")
+        let content = document.getElementById("content-watch")
+        content.style.marginTop = "-46.2%"
         registration.style.marginTop = "-35%"
         menuicon.style.display="none"
         boom.style.display="block"
@@ -36,6 +40,9 @@ function registration2() {
     var user2 = document.getElementById("usernameField").value
     let shadow = document.getElementById("shadow")
     let registrationmobil = document.getElementById("registration-mobil")
+    let content = document.getElementById("content-watch")
+    content.style.marginTop = "-46.1%"
+    content.style.display = "block"
     registrationmobil.style.display = "none"
     shadow.style.display = "none"
     console.log("Password: "+user)
@@ -55,12 +62,15 @@ function registration3() {
     var user2 = document.getElementById("usernameField").value
     let shadow = document.getElementById("shadow")
     let registrationmobil = document.getElementById("registration-mobil")
+    let content = document.getElementById("content-watch")
+    content.style.marginTop = "-46.1%"
+    content.style.display = "block"
     registrationmobil.style.display = "none"
     shadow.style.display = "none"
     console.log("Password: "+user)
     console.log("Name: "+user2)
     acaunt.style.marginLeft = "96.5%"
-    creation.style.marginLeft = "-46%"
+    creation.style.marginLeft = "-48%"
 	sign.style.display = "none"
     registration.style.display = "none"
     alert("Вы успешно зарегистрировались")
@@ -68,6 +78,9 @@ function registration3() {
 
 function registration4() {
 	var f = document.getElementById("registration");
+    let content = document.getElementById("content-watch")
+    content.style.marginTop = "-46.1%"
+    content.style.display = "block"
 	f.style.display = "none"
 }
 

@@ -26,6 +26,7 @@ body{
 }
 
 .header{
+  position: relative;
     display: flex;
     align-items: center;
     height: 70px;
@@ -34,6 +35,7 @@ body{
     font-family: roboto,sans-serif;
     background-attachment: fixed;
     box-shadow: 0px 5px 0px rgb(58, 58, 58);
+    z-index: 2;
 }
 
 .burger{
@@ -235,12 +237,13 @@ body{
   display: none;
 }
 
-.menu {
+.menu { 
+  position: relative;
     display: inline-grid;
     background-color: rgb(54, 53, 53);
     padding-top: 1%;
     width: 17%;
-    height: 660px;
+    height: 650px;
     border-radius: 0px 0px 7px 0px;
     animation-name: open;
     animation-duration: 450ms;
@@ -248,6 +251,33 @@ body{
     scrollbar-color: #5c5c5c #3d3d3d;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 2;
+  }
+
+  .btn-you{
+    background: transparent;
+    border: none;
+    color: rgb(239, 239, 239);
+    font-size: 23px;
+    margin-left: -78%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .btn-you:hover{
+    color: rgb(147, 55, 234);
+    border-radius: 4px;
+    transform: translateY(-3px);
+  }
+
+  .you{
+    width: 6%;
+    margin-left: 55%;
+    margin-top: -6%;
+    display: flex;
+    align-items: center;
   }
 
   @keyframes open {
@@ -548,6 +578,27 @@ hr{
   width: 80%;
 }
 
+.content-watch{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -19%;
+}
+
+.video{
+  margin-left: 18%;
+  margin-top: 4%;
+  width: 22%;
+  height: 24%;
+  border-radius: 5px;
+}
+
+.video{
+  width: 22%;
+  height: 24%;
+  border-radius: 5px;
+}
+
 .registration-mobil{
   margin-left: -10%;
   margin-top: -90%;
@@ -799,6 +850,10 @@ hr{
   .possibilities{
     margin-left: 3%;
     white-space: nowrap;
+  }
+
+  .user-you{
+    display: none;
   }
 }
 
