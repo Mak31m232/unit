@@ -243,7 +243,7 @@ body{
     background-color: rgb(54, 53, 53);
     padding-top: 1%;
     width: 17%;
-    height: 650px;
+    height: 660px;
     border-radius: 0px 0px 7px 0px;
     animation-name: open;
     animation-duration: 450ms;
@@ -619,18 +619,6 @@ hr{
   font-size: 20px;
 }
 
-.shadow::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  display: none;
-}
-
-.shadow::after {
-  content: ''; position: absolute; top: 0; background: rgba(28, 28, 28, 0.6);
-}
-
 @keyframes registration-mobil {
   0% {
     opacity: 0;
@@ -727,7 +715,7 @@ hr{
   display: none;
   background-color: #292929;
   opacity: 0.8;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media(max-width:752px){
@@ -853,6 +841,10 @@ hr{
   }
 
   .user-you{
+    display: none;
+  }
+
+  .content-watch{
     display: none;
   }
 }
