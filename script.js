@@ -40,9 +40,6 @@ function registration2() {
     var user2 = document.getElementById("usernameField").value
     let shadow = document.getElementById("shadow")
     let registrationmobil = document.getElementById("registration-mobil")
-    let content = document.getElementById("content-watch")
-    content.style.marginTop = "-46.1%"
-    content.style.display = "block"
     registrationmobil.style.display = "none"
     shadow.style.display = "none"
     console.log("Password: "+user)
@@ -62,9 +59,6 @@ function registration3() {
     var user2 = document.getElementById("usernameField").value
     let shadow = document.getElementById("shadow")
     let registrationmobil = document.getElementById("registration-mobil")
-    let content = document.getElementById("content-watch")
-    content.style.marginTop = "-46.1%"
-    content.style.display = "block"
     registrationmobil.style.display = "none"
     shadow.style.display = "none"
     console.log("Password: "+user)
