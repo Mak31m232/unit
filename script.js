@@ -7,7 +7,7 @@ function menu() {
         let registration = document.getElementById("registration")
         let content = document.getElementById("content-watch")
         content.style.marginTop = "-50%"
-        registration.style.marginTop = "-53%"
+        registration.style.marginTop = "-58%"
         menuicon.style.display="block"
         menu.style.display="none"
         shetmenu = 1;

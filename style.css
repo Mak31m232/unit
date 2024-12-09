@@ -280,6 +280,12 @@ body{
     align-items: center;
   }
 
+  .icons-you{
+    width: 10%;
+    margin-left: 3%;
+    padding-right: 6%;
+  }
+
   @keyframes open {
     0% {
       margin-left: -18%;
@@ -300,20 +306,28 @@ body{
   }
 
   .icon-div {
+    position: relative;
     background-color: rgb(54, 53, 53);
     width: 3%;
     height: 100%;
     transition: .2s;
     display: none;
+    z-index: 2;
   }
 
   .icon2{
     width: 63%;
     margin-left: 19%;
-    margin-top: 10.2%;
+    margin-top: 20%;
     display: inline-grid;
     align-items: center; 
     transition: .2s;
+  }
+
+  .icon-links-you{
+    width: 55%;
+    margin-left: 20%;
+    margin-top: 17%;
   }
 
   .icon2:hover {
@@ -403,10 +417,12 @@ hr{
 
 @keyframes reg {
   0% {
+    display: block;
     opacity: 0;
     visibility: hidden;
   }
   100% {
+    display: block;
     opacity: 1;
     visibility: visible;
   }
