@@ -5,8 +5,6 @@ function menu() {
         let menu = document.getElementById("menu") 
         let menuicon = document.getElementById("icon-div") 
         let registration = document.getElementById("registration")
-        let content = document.getElementById("content-watch")
-        content.style.marginTop = "-50%"
         registration.style.marginTop = "-58%"
         menuicon.style.display="block"
         menu.style.display="none"
@@ -16,8 +14,6 @@ function menu() {
         let boom = document.getElementById("menu")
         let menuicon = document.getElementById("icon-div") 
         let registration = document.getElementById("registration")
-        let content = document.getElementById("content-watch")
-        content.style.marginTop = "-46.2%"
         registration.style.marginTop = "-35%"
         menuicon.style.display="none"
         boom.style.display="block"
@@ -71,11 +67,8 @@ function registration3() {
 }
 
 function registration4() {
-	var f = document.getElementById("registration");
-    let content = document.getElementById("content-watch")
-    content.style.marginTop = "-46.1%"
-    content.style.display = "block"
-	f.style.display = "none"
+	var registrationCross = document.getElementById("registration");
+	registrationCross.style.display = "none"
 }
 
 let shet = 0;
