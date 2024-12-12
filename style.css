@@ -38,12 +38,12 @@ body{
     z-index: 2;
 }
 
-.burger{
+.burger-img{
   width:200%;
   margin-left: 0.4%;
 }
 
-.btn-burger{
+.burger{
   background: transparent;
   border: none;
   cursor: pointer;
@@ -145,7 +145,7 @@ body{
     padding: 10px 22px;
     border-radius: 6px;
     border: none;
-    margin-left: 89.5%;
+    margin-left: 90%;
     color: #fff;
     cursor: pointer;
     background-color: #7d2ae8;
@@ -157,7 +157,7 @@ body{
 }
 
 .acaunt{
-  position: absolute;
+	position: absolute;
     width: 36px;
     height: 35px;
     border: none;
@@ -168,11 +168,11 @@ body{
     z-index: 1;
 }
 
-.menu2 {
+.menu-user {
   position: absolute;
   background-color: rgb(57, 57, 57);
   width: 13%;
-  height: 43%;
+  height: 48%;
   margin-left: 87%;
   margin-top: -0.4%;
   border-radius: 13px 0px 0px 13px;
@@ -241,16 +241,13 @@ body{
   position: relative;
     display: inline-grid;
     background-color: rgb(54, 53, 53);
-    padding-top: 1%;
     width: 17%;
-    height: 660px;
+    height: 100%;
+    padding-top: 0.3%;
     border-radius: 0px 0px 7px 0px;
     animation-name: open;
     animation-duration: 450ms;
     animation-timing-function: menu;
-    scrollbar-color: #5c5c5c #3d3d3d;
-    overflow-y: scroll;
-    overflow-x: hidden;
     z-index: 2;
   }
 
@@ -309,6 +306,7 @@ body{
     position: relative;
     background-color: rgb(54, 53, 53);
     width: 3%;
+    padding-top: -1%;
     height: 100%;
     transition: .2s;
     display: none;
@@ -340,7 +338,7 @@ body{
   }
 
   #glav-icon2{
-    width: 48%;
+    width: 54%;
   }
 
   .icons {
@@ -358,10 +356,6 @@ hr{
 .hr3{
   width: 100%;
   margin-top: 3%;
-}
-
-.other{
-  padding-top: 5%;
 }
 
 .other2{
@@ -400,199 +394,199 @@ hr{
 }
 
 .registration {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  margin-left: 43%;
-  margin-top: -35%;
-  animation-name: reg;
-  animation-duration: 500ms;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-timing-function: registration;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-  z-index: 2;
-}
-
-@keyframes reg {
-  0% {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: 43%;
+    margin-top: -25%;
+    animation-name: reg;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: registration;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    z-index: 2;
   }
-  100% {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+  
+  @keyframes reg {
+    0% {
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
   }
-}
-
-.cross {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  margin-left: 38%;
-}
-
-.cross-img {
-  width: 50px;
-}
-
-.welcome {
-  font-size: 30px;
-  margin-left: 1.5%;
-  margin-bottom: 2%;
-}
-
-.logo2 {
-  position: absolute;
-  width: 40%;
-  object-fit: cover;
-  margin-left: -27%;
-  margin-top: -6%;
-  z-index: 1;
-}
-
-.reg {
-  position: absolute;
-  z-index: 2;
-}
-
-.reg-input2 {
-  display: flex;
-  align-items: center;
-  margin-left: 0.6%;
-}
-
-.reg-input {
-  display: flex;
-  align-items: center;
-  margin-top: 4%;
-  margin-left: 0.5%;
-}
-
-.usernamelabel {
-  display: block;
-  color: white;
-  font-size: 14px;
-  padding: 5px 5px;
-}
-
-#usernameField {
-  display: block;
-  width: 200px;
-  height: 40px;
-  background-color: #292929;
-  border-radius: 6px;
-  border: 2px solid #292929;
-  padding: 0px 12px;
-  outline: none;
-  caret-color: rgb(152, 88, 255);
-  color: rgb(212, 212, 212);
-  font-size: 12px;
-  transition-duration: .2s;
-}
-
-.usernamelabell {
-  display: block;
-  color: white;
-  font-size: 14px;
-  padding: 5px 5px;
-}
-
-.usernamelabel {
-  display: block;
-  color: white;
-  font-size: 14px;
-  padding: 5px 5px;
-}
-
-#usernameField {
-  display: block;
-  width: 200px;
-  height: 40px;
-  background-color: #292929;
-  border-radius: 6px;
-  border: 2px solid #292929;
-  padding: 0px 12px;
-  outline: none;
-  caret-color: rgb(152, 88, 255);
-  color: rgb(212, 212, 212);
-  font-size: 12px;
-  transition-duration: .2s;
-}
-
-#usernameField:focus,
-#usernameField:valid {
-  border: 2px solid rgb(152, 88, 255);
-  transition-duration: .2s;
-}
-
-#usernameFiel {
-  margin-left: 0.9%;
-  display: block;
-  width: 200px;
-  height: 40px;
-  background-color: #292929;
-  border-radius: 6px;
-  border: 2px solid #292929;
-  padding: 0px 12px;
-  outline: none;
-  caret-color: rgb(152, 88, 255);
-  color: rgb(212, 212, 212);
-  font-size: 12px;
-  transition-duration: .2s;
-}
-
-#usernameFiel:focus,
-#usernameFiel:valid {
-  border: 2px solid rgb(152, 88, 255);
-  transition-duration: .2s;
-}
-
-
-.login{
-  position: absolute;
-  padding: 10px 22px;
-  border-radius: 6px;
-  border: none;
-  margin-left: 7%;
-  margin-top: 3%;
-  color: #fff;
-  cursor: pointer;
-  background-color: #7d2ae8;
-  transition: all 0.5s ease;
-}
-
-.login:hover{
-  background-color: #8d37fe;
-}
-
-.signup{
-  position: absolute;
-  padding: 10px 22px;
-  border-radius: 6px;
-  border: none;
-  margin-left: 40%;
-  margin-top: 3%;
-  color: #fff;
-  cursor: pointer;
-  background-color: #7d2ae8;
-  transition: all 0.5s ease;
-}
-
-.signup:hover{
-  background-color: #8d37fe;
-}
-
-.logo2{
-  display: flex;
-  position: absolute;
-  margin-left: -70%;
-  margin-top: -25%;
-  width: 80%;
-}
+  
+  .cross {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 38%;
+  }
+  
+  .cross-img {
+    width: 50px;
+  }
+  
+  .welcome {
+    font-size: 30px;
+    margin-left: 1.5%;
+    margin-bottom: 2%;
+  }
+  
+  .logo2 {
+    position: absolute;
+    width: 40%;
+    object-fit: cover;
+    margin-left: -27%;
+    margin-top: -6%;
+    z-index: 1;
+  }
+  
+  .reg {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .reg-input2 {
+    display: flex;
+    align-items: center;
+    margin-left: 0.6%;
+  }
+  
+  .reg-input {
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 0.5%;
+  }
+  
+  .usernamelabel {
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  
+  #usernameField {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #292929;
+    border-radius: 6px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    caret-color: rgb(152, 88, 255);
+    color: rgb(212, 212, 212);
+    font-size: 12px;
+    transition-duration: .2s;
+  }
+  
+  .usernamelabell {
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  
+  .usernamelabel {
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  
+  #usernameField {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #292929;
+    border-radius: 6px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    caret-color: rgb(152, 88, 255);
+    color: rgb(212, 212, 212);
+    font-size: 12px;
+    transition-duration: .2s;
+  }
+  
+  #usernameField:focus,
+  #usernameField:valid {
+    border: 2px solid rgb(152, 88, 255);
+    transition-duration: .2s;
+  }
+  
+  #usernameFiel {
+    margin-left: 0.9%;
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #292929;
+    border-radius: 6px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    caret-color: rgb(152, 88, 255);
+    color: rgb(212, 212, 212);
+    font-size: 12px;
+    transition-duration: .2s;
+  }
+  
+  #usernameFiel:focus,
+  #usernameFiel:valid {
+    border: 2px solid rgb(152, 88, 255);
+    transition-duration: .2s;
+  }
+  
+  
+  .login{
+    position: absolute;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 7%;
+    margin-top: 3%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.5s ease;
+  }
+  
+  .login:hover{
+    background-color: #8d37fe;
+  }
+  
+  .signup{
+    position: absolute;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 40%;
+    margin-top: 3%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.5s ease;
+  }
+  
+  .signup:hover{
+    background-color: #8d37fe;
+  }
+  
+  .logo2{
+    display: flex;
+    position: absolute;
+    margin-left: -70%;
+    margin-top: -25%;
+    width: 80%;
+  }
 
 .content-watch{
   position: absolute;
@@ -791,7 +785,7 @@ hr{
 
   .menu{
     position: relative;
-    width: 52%;
+    width: 40%;
     height: 100%;
   }
 
@@ -815,12 +809,12 @@ hr{
     margin-left: 3.2%;
   }
 
-  .burger{
+  .burger-img{
     width:1000%;
     margin-left: 20%;
   }
   
-  .btn-burger{
+  .burger{
     background: transparent;
     border: none;
     cursor: pointer;

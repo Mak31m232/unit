@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
     <div id="shadow" class="shadow"></div>
     <header class="header">
-        <button onclick="menu()" class="btn-burger"><img src="иконки/меню.png" alt="" class="burger"></button>
+        <button class="burger" onclick="menu()"><img src="иконки/меню.png" alt="" class="burger-img"></button>
         <img class="logo" src="иконки/лого.png" alt="">
         <a class="unit" href="">unit</a>
         <form class="form" action="">
@@ -24,14 +24,14 @@
             </div>
         </form>
         <div id="creation" class="creation">
-            <button onclick="" class="notification-btn"><img class="notification-img" src="иконки/уведомления.png" alt=""></button>
-            <button onclick="" class="add-btn"><img class="add-img" src="иконки/плюс.png" alt=""></button>
+            <button onclick="" class="notification-btn"><img class="notification-img" title="уведомления" src="иконки/уведомления.png" alt=""></button>
+            <button onclick="" class="add-btn"><img class="add-img" title="Создать" src="иконки/плюс.png" alt=""></button>
         </div>
         <button id="btn-sign" onclick="registration()" class="btn-sign">Войти</button>
         <button id="acaunt" onclick="menu2()" class="acaunt"></button>
         <button class="btn-setting"><img class="img-setting" src="иконки/настройки.png" alt=""></button>
     </header>
-    <div id="menu2" class="menu2">
+    <div id="menu-user" class="menu-user">
         <div class="warp3">
         <h3 class="title">Ваш аккаунт</h3><br>
             <div class="links2">
@@ -39,6 +39,7 @@
                 <a href="" class="a">Мои истории</a><br>
                 <a class="theme3" href="">Тема:</a>
                 <button onclick="e()" id="theme" class="theme2">темная</button><br>
+                <a class="a" href="">Кошелек</a>
                 <a class="a" href="">Помощь</a><br>
                 <a href="" class="a">Настройки</a><br>
                 <a href="" class="a">Сообщить о ошибке</a><br>
@@ -63,87 +64,39 @@
         <div class="links">
             <div class="content">
                 <a id="a1" href="" class="a"><img id="glav-icon" class="icons" src="иконки/главная.png" alt="">Главная</a><br>
-                <a href="" class="a"><img class="icons" src="иконки/огонь.png" alt="">Рекомендации</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/книга.png" alt="">Библиотека</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/подписки.png" alt="">Подписки</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/видео.png" alt="">Видео</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/спорт.png" alt="">Спорт</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/музыка.png" alt="">Музыка</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/мессенджер.png" alt="">Мессенджер</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/фильмы.png" alt="">Кинотеатр</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/трансляции.png" alt="">Трансляции</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/звезда.png" alt="">Премиум</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/избранное.png" alt="">Избранное</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/Справка.png" alt="">Справка</a><br>
-            </div>
-            <hr class="hr3">
-            <div class="user-you">
-                <button class="btn-you"><a class="a-you" href=""></a>Вы <img class="you" src="иконки/стрелка в право.png" alt=""></button>
-                <a href="" class="a"><img class="icons-you" src="иконки/истории.png" alt="">Истории</a><br>
-                <a href="" class="a"><img class="icons-you" src="иконки/плейлисты.png" alt="">Плейлисты</a><br>
-                <a href="" class="a"><img class="icons-you" src="иконки/ваши видео.png" alt="">Ваши видео</a><br>
-                <a href="" class="a"><img class="icons-you" src="иконки/смотреть позже.png" alt="">Смотреть позже</a><br>
-                <a href="" class="a"><img class="icons-you" src="иконки/лайк.png" alt="">Понравившиеся</a><br>
-            </div>
+                <a href="" class="a"><img class="icons" src="иконки/музыка.png" alt="">Музыка</a><br>
+                <a href="" class="a"><img class="icons" src="иконки/фильмы.png" alt="">Кинотеатр</a><br>
+                <a href="" class="a"><img class="icons" src="иконки/трансляции.png" alt="">Трансляции</a><br>
+                <a href="" class="a"><img class="icons" src="иконки/звезда.png" alt="">Премиум</a><br>
+                <a href="" class="a"><img class="icons" src="иконки/избранное.png" alt="">Избранное</a><br>
                 <hr class="hr3">
-                <div class="other">
-                    <a href="" class="a"><img class="icons" src="иконки/Отзовы.png" alt="">Отзывы</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/отпрвить отзыв.png" alt="">Отправить отзыв</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/Связь.png" alt="">Связаться с нами</a><br>
-                </div>
-                <hr class="hr4">
-                <div class="possibilitiess"><h3 class="possibilities">Другие вазможности</h3></div>
-                <div class="other2">
-                    <a href="" class="a"><img class="icons" src="иконки/творчество.png" alt="">Творческая студия</a><br>
-                    <a href="" class="a"><img class="icons" src="иконки/карточка.png" alt="">Кошелек</a><br>
+                <div class="user-you">
+                    <button class="btn-you"><a class="a-you" href=""></a>Вы <img class="you" src="иконки/стрелка в право.png" alt=""></button>
+                    <a href="" class="a"><img class="icons-you" src="иконки/истории.png" alt="">Истории</a><br>
+                    <a href="" class="a"><img class="icons-you" src="иконки/плейлисты.png" alt="">Плейлисты</a><br>
+                    <a href="" class="a"><img class="icons-you" src="иконки/ваши видео.png" alt="">Ваши видео</a><br>
+                    <a href="" class="a"><img class="icons-you" src="иконки/смотреть позже.png" alt="">Смотреть позже</a><br>
+                    <a href="" class="a"><img class="icons-you" src="иконки/лайк.png" alt="">Понравившиеся</a><br>
                 </div>
             </div>
-            <hr class="hr2">
-        <div class="hr">
-            <a class="hr1" href="">Применяются<br> рекомендательные<br> технологии</a>
-        </div>
-        <hr class="hr2">
-        <div class="hr">
-            <a class="hr1" href="">для бизнеса</a><br>
-            <a class="hr1" href="">Разработчикам</a><br>
-            <a class="hr1" href="">Блог,</a>
-            <a class="hr1" href="">о unit</a><br>
         </div>
     </div>
     <div id="icon-div" class="icon-div">
         <div class="content">
             <a class="icon-links" href=""><img id="glav-icon2" title="Главная" src="иконки/главная.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Рекомендации" src="иконки/огонь.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Библиотека" src="иконки/книга.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Подписки" src="иконки/подписки.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Видео" src="иконки/видео.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Спорт" src="иконки/спорт.png" alt="" class="icon2"></a><br>
             <a class="icon-links" href=""><img title="Музыка" src="иконки/музыка.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Мессенджер" src="иконки/мессенджер.png" alt="" class="icon2"></a><br>
             <a class="icon-links" href=""><img title="Кинотеатр" src="иконки/фильмы.png" alt="" class="icon2"></a><br>
             <a class="icon-links" href=""><img title="Трансляции" src="иконки/трансляции.png" alt="" class="icon2"></a><br>
             <a class="icon-links" href=""><img title="Премиум" src="иконки/звезда.png" alt="" class="icon2"></a><br>
             <a class="icon-links" href=""><img title="Избранное" src="иконки/избранное.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Справка" src="иконки/Справка.png" alt="" class="icon2"></a><br>
-        </div>
         <hr class="hr3">
         <div class="user-you">
-                <a href="" class="icon-links"><img title="истории" class="icon-links-you" src="иконки/истории.png" alt=""></a><br>
-                <a href="" class="icon-links"><img title="плейлисты" class="icon-links-you" src="иконки/плейлисты.png" alt=""></a><br>
-                <a href="" class="icon-links"><img title="ваши видео" class="icon-links-you" src="иконки/ваши видео.png" alt=""></a><br>
-                <a href="" class="icon-links"><img title="смотреть позже" class="icon-links-you" src="иконки/смотреть позже.png" alt=""></a><br>
-                <a href="" class="icon-links"><img title="лайк" class="icon-links-you" src="иконки/лайк.png" alt=""></a><br>
+            <a href="" class="icon-links"><img title="истории" class="icon-links-you" src="иконки/истории.png" alt=""></a><br>
+            <a href="" class="icon-links"><img title="плейлисты" class="icon-links-you" src="иконки/плейлисты.png" alt=""></a><br>
+            <a href="" class="icon-links"><img title="ваши видео" class="icon-links-you" src="иконки/ваши видео.png" alt=""></a><br>
+            <a href="" class="icon-links"><img title="смотреть позже" class="icon-links-you" src="иконки/смотреть позже.png" alt=""></a><br>
+            <a href="" class="icon-links"><img title="лайк" class="icon-links-you" src="иконки/лайк.png" alt=""></a><br>
         </div>
-        <hr class="hr3">
-        <div class="other">
-            <a class="icon-links" href=""><img title="Отзывы" src="иконки/Отзовы.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Отправить отзыв" src="иконки/отпрвить отзыв.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Связаться с нами" src="иконки/Связь.png" alt="" class="icon2"></a>
-        </div>
-        <hr class="hr3">
-        <div class="other">
-            <a class="icon-links" href=""><img title="Творческая студия" src="иконки/творчество.png" alt="" class="icon2"></a><br>
-            <a class="icon-links" href=""><img title="Кошелек" src="иконки/карточка.png" alt="" class="icon2"></a><br>
         </div>
     </div>
     <div id="registration" class="registration">

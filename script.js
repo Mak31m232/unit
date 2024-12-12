@@ -4,8 +4,6 @@ function menu() {
     if (shetmenu==0) {
         let menu = document.getElementById("menu") 
         let menuicon = document.getElementById("icon-div") 
-        let registration = document.getElementById("registration")
-        registration.style.marginTop = "-58%"
         menuicon.style.display="block"
         menu.style.display="none"
         shetmenu = 1;
@@ -13,8 +11,6 @@ function menu() {
     else if (shetmenu==1){
         let boom = document.getElementById("menu")
         let menuicon = document.getElementById("icon-div") 
-        let registration = document.getElementById("registration")
-        registration.style.marginTop = "-35%"
         menuicon.style.display="none"
         boom.style.display="block"
         shetmenu = 0;
@@ -75,12 +71,12 @@ let shet = 0;
 
 function menu2() {
     if (shet==0) {
-        let boom = document.getElementById("menu2")
+        let boom = document.getElementById("menu-user")
         boom.style.display="block"
         shet = 1;
     }   
     else if (shet==1){
-        let boom = document.getElementById("menu2")
+        let boom = document.getElementById("menu-user")
         boom.style.display="none"
         shet = 0;
     }
